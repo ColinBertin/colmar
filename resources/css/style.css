@@ -3,3 +3,19 @@ body {
     font-size: 16px;
     font-family: 'Ubuntu', sans-serif;
 }
+
+header {
+    padding: 24px;
+    height: 64px;
+    border: 1px solid red;
+}
+
+header img {
+    width: 8%;
+    height: auto;
+}
+
+#col {
+    font-size: 32px;
+    text-transform: uppercase;
+}
