@@ -1,21 +1,31 @@
 body {
     margin: 0;
+    padding: 0;
     font-size: 16px;
     font-family: 'Ubuntu', sans-serif;
 }
 
 header {
-    padding: 24px;
-    height: 64px;
-    border: 1px solid red;
+    padding: 10px 24px;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 10;
 }
 
-header img {
-    width: 8%;
-    height: auto;
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+ul li {
+    list-style-type: none;
 }
 
 #col {
     font-size: 32px;
     text-transform: uppercase;
+    justify-content: center;
 }
+
