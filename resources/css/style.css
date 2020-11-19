@@ -6,7 +6,8 @@
 
 body {
     font-size: 16px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5px;
 }
 
 .mobile {
@@ -17,28 +18,72 @@ h1, h2, h3 {
     color: #4A4A4A;
 }
 
-h1 {
-    font-size: 2.5rem;
+h1{
+    font-size: 4rem;
+    font-weight: 700;
 }
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+/* header */
 
 header {
     top: 0;
     background-color: #fff;
-    padding: 10px 24px;
-    height: 4rem;
+    padding-left: 24px;
+    padding-right: 24px;
+    min-height: 4rem;
     width: 100%;
     display: flex;
+    justify-content: space-between;
     position: fixed;
     z-index: 10;
 }
 
+#logo {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    font-size: 2rem;
+    margin: auto 0;
+    text-transform: uppercase;
+}
+
+.clear-grey {
+    color: #9B9B9B;
+    font-weight: 300;
+}
+
+.dark-grey {
+    font-weight: 500;
+    color: #4A4A4A;
+} 
+
 ul {
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 2rem;
+    margin-top: 1.2rem;
 }
 
 ul li {
     list-style-type: none;
+    margin-right: 16px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #4A4A4A;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
 }
 
 #col {
