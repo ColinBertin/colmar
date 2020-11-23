@@ -19,7 +19,7 @@ h1, h2, h3 {
 }
 
 h1{
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
 }
 
@@ -35,15 +35,15 @@ h3 {
 
 main {
     position: relative;
-    top: 4rem;
+    top: 3rem;
 }
 
 .left {
-    width: 60%;
+    max-width: 60%;
 }
 
 .right {
-    width: 40%;
+    max-width: 40%;
 }
 
 /* header */
@@ -59,7 +59,7 @@ header {
     background-color: #fff;
     padding-left: 24px;
     padding-right: 24px;
-    min-height: 64px;
+    min-height: 4rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -109,8 +109,47 @@ ul li a {
 /* BANNER */
 
 #banner {
-
+    display: flex;
+    background-color: #D8D8D8;
+    justify-content: space-between;
 }
+
+.banner {
+    box-sizing: content-box;
+    width: 60%;
+    margin: 32px 12px 32px 24px;
+}
+
+.banner img {
+    width: 100%;
+    overflow: hidden;
+    padding-right: 0.8rem;
+}
+
+.side-banner {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40%;
+    margin: 64px 12px;
+    padding: 4rem 1.5rem;
+}
+
+button {
+    border: none;
+    margin: 0 auto;
+    padding: 0.5rem 7rem;
+    background-color: #4A4A4A;
+}
+
+button a {
+    text-decoration: none;
+    color:#fff;
+    font-size: 1.2rem;
+}
+
+
 
 
 
@@ -129,4 +168,4 @@ ul li a {
       display: none;
     }
 
-}
+}   
