@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    display: block;
+    box-sizing: border-box;
 }
 
 body {
@@ -33,9 +33,13 @@ h3 {
     font-weight: 300;
 }
 
+a {
+    text-decoration: none;
+}
+
 main {
     position: relative;
-    top: 3rem;
+    top: 4rem;
 }
 
 .left {
@@ -48,31 +52,35 @@ main {
 
 /* header */
 
-.desktop {
+.header {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
 header {
-    top: 0;
-    background-color: #fff;
-    padding-left: 24px;
-    padding-right: 24px;
-    min-height: 4rem;
-    width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
     z-index: 10;
+    top: 0;
+    background-color: #fff;
+    padding: 0 24px;
+    min-height: 4rem;
+    width: 100%;
 }
 
-#logo {
+.logo {
     font-family: 'Ubuntu', sans-serif;
     display: flex;
     font-size: 2rem;
-    margin: auto 0;
     text-transform: uppercase;
+}
+
+.logo img {
+    height: 40px;
+    width: 40px;
 }
 
 .clear-grey {
@@ -87,21 +95,18 @@ header {
 
 ul {
     display: flex;
-    justify-content: space-around;
-    margin-right: 2rem;
-    margin-top: 1.2rem;
+    padding-top: 0.5rem;
 }
 
 ul li {
     list-style-type: none;
-    margin-right: 16px;
+    margin-left: 16px;
 }
 
 ul li a {
-    text-decoration: none;
     color: #4A4A4A;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 1.5rem;
 }
 
@@ -168,4 +173,15 @@ button a {
       display: none;
     }
 
+    .logo-mobile img {
+        height: 35px;
+        width: 35px;
+    }
+
+    #navbar-mobile {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 }   
