@@ -114,32 +114,32 @@ ul li a {
 /* BANNER */
 
 #banner {
+    box-sizing: border-box;
     display: flex;
     background-color: #D8D8D8;
-    justify-content: space-between;
 }
 
 .banner {
-    box-sizing: content-box;
     width: 60%;
-    margin: 32px 12px 32px 24px;
+    padding: 32px 12px 32px 24px;
 }
 
 .banner img {
     width: 100%;
-    overflow: hidden;
-    padding-right: 0.8rem;
 }
 
 .side-banner {
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     width: 40%;
     margin: 64px 12px;
     padding: 4rem 1.5rem;
 }
+
+.side-banner h1, 
+.side-banner h3 {
+    margin-bottom: 50px;
+} 
 
 button {
     border: none;
@@ -173,6 +173,8 @@ button a {
       display: none;
     }
 
+    /* --------------- HEADER --------------- */
+
     .logo-mobile img {
         height: 35px;
         width: 35px;
@@ -184,4 +186,11 @@ button a {
         justify-content: space-around;
         align-items: center;
     }
+
+    /* --------------- BANNER --------------- */
+
+    #banner {
+        flex-wrap: wrap;
+    }
+
 }   
