@@ -45,6 +45,7 @@ a {
 main {
     position: relative;
     top: 4rem;
+    border: 1px solid #D8D8D8;
 }
 
 .left  {
@@ -171,6 +172,7 @@ button a {
 #info {
     width: 100%;
     display: flex;
+    margin-bottom: 32px;
 }
 
 #info .left {
@@ -186,8 +188,13 @@ button a {
     margin-bottom: 24px;
 }
 
+.img-info-titre {
+    padding-right: 10px;
+}
+
 .side-info {
-    padding: 16px 0 32px 28px;
+    padding: 16px 0 32px 0;
+    border-left: 1px solid #D8D8D8;
 }
 
 .side-info img {
@@ -198,7 +205,11 @@ button a {
 
 #orientation, #campus, #lecture {
     display: flex;
-    padding: 16px 0 16px 16px;
+    padding: 16px;
+}
+
+#orientation {
+    border-bottom: 4px double #D8D8D8;
 }
 
 #lecture {
@@ -214,7 +225,9 @@ button a {
 
 /* --------------- COURSES --------------- */
 
-
+#courses {
+    background-color: #9B9B9B; /* à verifier */
+}
 
 /* --------------- THESIS --------------- */
 
