@@ -33,6 +33,11 @@ h3 {
     font-weight: 500;
 }
 
+p {
+    color: #9B9B9B;
+    font-weight: 300;
+}
+
 a {
     text-decoration: none;
 }
@@ -42,12 +47,20 @@ main {
     top: 4rem;
 }
 
-.left {
+.left  {
     width: 60%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 32px 12px 32px 24px;
 }
 
 .right {
     width: 40%;
+}
+
+cite {
+    font-size: 0.8rem;
+    color: #9B9B9B;
 }
 
 /* --------------- HEADER --------------- */
@@ -118,12 +131,6 @@ ul li a {
     background-color: #D8D8D8;
 }
 
-.banner {
-    flex-grow: 1;
-    flex-shrink: 1;
-    padding: 32px 12px 32px 24px;
-}
-
 .banner img {
     width: 100%;
 }
@@ -162,7 +169,47 @@ button a {
 /* --------------- INFO --------------- */
 
 #info {
+    width: 100%;
     display: flex;
+}
+
+#info .left {
+    
+}
+
+#info .left img {
+    width: 98%;
+    margin-bottom: 32px;;
+}
+
+.info h2, .info p {
+    margin-bottom: 24px;
+}
+
+.side-info {
+    padding: 16px 0 32px 28px;
+}
+
+.side-info img {
+    width: 35%;
+    height: auto;
+    margin-right: 16px;
+}
+
+#orientation, #campus, #lecture {
+    display: flex;
+    padding: 16px 0 16px 16px;
+}
+
+#lecture {
+    background: #D8D8D8;
+}
+
+.aside {
+    margin: auto;
+}
+.aside h3, .aside p {
+    margin-bottom: 8px;
 }
 
 /* --------------- COURSES --------------- */
@@ -225,5 +272,24 @@ button a {
         padding-top: 15px;
         padding-bottom: 15px;
     }
+
+
+    /* --------------- INFO --------------- */
+
+
+    #info {
+        width: 100%;
+        border: 1px solid red;
+    }
+
+    #orientation, #campus, #lecture {
+        flex-direction: column;
+    }
+
+    .mobile-info-img {
+        width: 90%;
+        height: auto;
+    }
+
 
 }   
