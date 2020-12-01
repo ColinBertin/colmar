@@ -178,7 +178,7 @@ button a {
 
 #info .left img {
     width: 98%;
-    margin-bottom: 32px;;
+    margin-bottom: 32px;
 }
 
 .info h2, .info p {
@@ -323,26 +323,29 @@ button a {
     /* --------------- INFO --------------- */
 
 
-    .side-info {
-        padding: 1rem 1rem 2rem 1rem;
-        display: flex;
+    .side-info { 
         flex-direction: column;
         flex-grow: 1;
         flex-shrink: 1;
-        align-items: flex-start;
+        padding-bottom: 0;
+    }
+
+    .aside {
+        margin-left: 16px;
+        margin-bottom: 32px;
     }
 
     #orientation, #campus, #lecture {
-        display: flex;
         flex-direction: column;
-        padding: 0 auto;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
-    .mobile-info-img {
-        display: block;
+    .mobile-info-img-box img {
+        display: inline-block;
         width: 100%;
         height: auto;
-        object-fit: cover;
+        margin-bottom: 32px;
     }
 
     #orientation {
