@@ -1,3 +1,5 @@
+/* --------------- GLOBAL --------------- */
+
 * {
     margin: 0;
     padding: 0;
@@ -64,7 +66,9 @@ cite {
     color: #9B9B9B;
 }
 
+
 /* --------------- HEADER --------------- */
+
 
 .header {
     width: 100%;
@@ -127,6 +131,7 @@ ul li a {
 
 /* --------------- BANNER --------------- */
 
+
 #banner {
     display: flex;
     background-color: #D8D8D8;
@@ -168,6 +173,7 @@ button a {
 
 
 /* --------------- INFO --------------- */
+
 
 #info {
     width: 100%;
@@ -221,7 +227,9 @@ button a {
     margin-bottom: 8px;
 }
 
+
 /* --------------- COURSES --------------- */
+
 
 #courses {
     background-color: #D8D8D8;
@@ -262,7 +270,33 @@ button a {
     margin-bottom: 8px;
 }
 
+
 /* --------------- THESIS --------------- */
+
+
+#thesis {
+    display: flex;
+    flex-direction: column;
+}
+
+#thesis h2 {
+    margin: 32px auto;
+}
+
+.thesis-info {
+    display: flex;
+    border: 1px solid red;
+}
+
+.thesis-left-box {
+    border: 1px solid green;
+
+}
+
+.thesis-left-box video {
+    width: 100%;
+    height: auto;
+}
 
 
 
@@ -356,7 +390,9 @@ button a {
         background: none;
     }
 
+
     /* --------------- COURSES --------------- */
+
 
     #courses {
         border-top: 1px solid #D8D8D8;
@@ -385,4 +421,10 @@ button a {
     .mobile-courses-h3 a {
         color: #303030;
     }
+
+
+    /* --------------- THESIS --------------- */
+
+
+
 }   
